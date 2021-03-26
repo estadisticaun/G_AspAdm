@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <style>body{background-color:white;}</style>
-<script src="libraryjs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libraryjs/jquery-1.11.1/jquery.min.js"></script>
+<script src="libraryjs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libraryjs/jquery-3.5.0/jquery.min.js"></script>
 <script src="libraryjs/proj4js-2.3.15/proj4.js"></script>
-<link href="libraryjs/highcharts-6.0.3/css/motion.css" rel="stylesheet" />
-<script src="libraryjs/highcharts-6.0.3/highcharts.js"></script>
-<script src="libraryjs/highcharts-6.0.3/highcharts-3d.js"></script>
-<script src="libraryjs/highcharts-6.0.3/highcharts-more.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/stock.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/heatmap.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/treemap.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/annotations.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/boost.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/data.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/drag-panes.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/drilldown.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/funnel.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/item-series.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/offline-exporting.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/overlapping-datalabels.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/parallel-coordinates.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/sankey.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/solid-gauge.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/streamgraph.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/sunburst.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/vector.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/wordcloud.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/xrange.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/exporting.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/export-data.js"></script>
-<script src="libraryjs/highcharts-6.0.3/maps/modules/map.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/grouped-categories.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/motion.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/multicolor_series.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/reset.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/symbols-extra.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/text-symbols.js"></script>
-<script src="libraryjs/highchart-binding-0.6.0/highchart.js"></script>
+<link href="libraryjs/highcharts-8.1.2/css/motion.css" rel="stylesheet" />
+<script src="libraryjs/highcharts-8.1.2/highcharts.js"></script>
+<script src="libraryjs/highcharts-8.1.2/highcharts-3d.js"></script>
+<script src="libraryjs/highcharts-8.1.2/highcharts-more.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/stock.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/map.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/annotations.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/data.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/drilldown.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/item-series.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/offline-exporting.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/overlapping-datalabels.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/exporting.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/export-data.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/funnel.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/heatmap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/treemap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/sankey.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/dependency-wheel.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/organization.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/solid-gauge.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/streamgraph.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/sunburst.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/vector.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/wordcloud.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/xrange.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/tilemap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/venn.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/gantt.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/timeline.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/parallel-coordinates.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/bullet.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/coloraxis.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/dumbbell.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/lollipop.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/series-label.js"></script>
+<script src="libraryjs/highcharts-8.1.2/plugins/motion.js"></script>
+<script src="libraryjs/highcharts-8.1.2/custom/reset.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/boost.js"></script>
+<script src="libraryjs/highchart-binding-0.8.2/highchart.js"></script>
   <title>highchart</title>
 </head>
 <body>
 <div id="htmlwidget_container">
-  <div id="htmlwidget-6e0a820449991b639437" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <div id="htmlwidget-f04b9bd92858a2ce9d3d" style="width:100%;height:500px;" class="highchart html-widget"></div>
 </div>
-<script type="application/json" data-for="htmlwidget-6e0a820449991b639437">{"x":{"hc_opts":{"title":{"style":{"fontWeight":"bold","fontSize":"22px","useHTML":true},"text":"Evolución del número de aspirantes en situación de discapacidad - sede Bogotá"},"yAxis":{"title":{"text":"Número de aspirantes (k: miles)","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"type":"linear","lineColor":"#787878","lineWidth":1,"min":0,"opposite":false,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"line":{"marker":{"enabled":true,"symbol":"square","radius":1}}},"series":[{"name":"No","data":[{"Fecha":"2014-2","Clase":"No","Total":32208,"Relativo":100,"y":32208,"name":"2014-2"},{"Fecha":"2015-1","Clase":"No","Total":52685,"Relativo":100,"y":52685,"name":"2015-1"},{"Fecha":"2015-2","Clase":"No","Total":34117,"Relativo":100,"y":34117,"name":"2015-2"},{"Fecha":"2016-1","Clase":"No","Total":54705,"Relativo":100,"y":54705,"name":"2016-1"},{"Fecha":"2016-2","Clase":"No","Total":31693,"Relativo":100,"y":31693,"name":"2016-2"},{"Fecha":"2017-1","Clase":"No","Total":57781,"Relativo":100,"y":57781,"name":"2017-1"},{"Fecha":"2017-2","Clase":"No","Total":34772,"Relativo":100,"y":34772,"name":"2017-2"},{"Fecha":"2018-1","Clase":"No","Total":53655,"Relativo":100,"y":53655,"name":"2018-1"},{"Fecha":"2018-2","Clase":"No","Total":33690,"Relativo":100,"y":33690,"name":"2018-2"},{"Fecha":"2019-1","Clase":"No","Total":57395,"Relativo":100,"y":57395,"name":"2019-1"},{"Fecha":"2019-2","Clase":"No","Total":31769,"Relativo":100,"y":31769,"name":"2019-2"},{"Fecha":"2020-1","Clase":"No","Total":49621,"Relativo":100,"y":49621,"name":"2020-1"},{"Fecha":"2020-2","Clase":"No","Total":29376,"Relativo":99,"y":29376,"name":"2020-2"}],"type":"line","color":"#8cc63f","zoomType":{"enabled":false},"resetZoomButton":true},{"name":"Sí","data":[{"Fecha":"2014-2","Clase":"Sí","Total":49,"Relativo":0,"y":49,"name":"2014-2"},{"Fecha":"2015-1","Clase":"Sí","Total":78,"Relativo":0,"y":78,"name":"2015-1"},{"Fecha":"2015-2","Clase":"Sí","Total":53,"Relativo":0,"y":53,"name":"2015-2"},{"Fecha":"2016-1","Clase":"Sí","Total":79,"Relativo":0,"y":79,"name":"2016-1"},{"Fecha":"2016-2","Clase":"Sí","Total":103,"Relativo":0,"y":103,"name":"2016-2"},{"Fecha":"2017-1","Clase":"Sí","Total":83,"Relativo":0,"y":83,"name":"2017-1"},{"Fecha":"2017-2","Clase":"Sí","Total":81,"Relativo":0,"y":81,"name":"2017-2"},{"Fecha":"2018-1","Clase":"Sí","Total":78,"Relativo":0,"y":78,"name":"2018-1"},{"Fecha":"2018-2","Clase":"Sí","Total":85,"Relativo":0,"y":85,"name":"2018-2"},{"Fecha":"2019-1","Clase":"Sí","Total":94,"Relativo":0,"y":94,"name":"2019-1"},{"Fecha":"2019-2","Clase":"Sí","Total":149,"Relativo":0,"y":149,"name":"2019-2"},{"Fecha":"2020-1","Clase":"Sí","Total":211,"Relativo":0,"y":211,"name":"2020-1"},{"Fecha":"2020-2","Clase":"Sí","Total":213,"Relativo":1,"y":213,"name":"2020-2"}],"type":"line","color":"#f15a24","zoomType":{"enabled":false},"resetZoomButton":true}],"xAxis":{"type":"category","title":{"text":"Periodo","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"lineColor":"#787878","opposite":false,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"rangeSelector":{"inputEnabled":false,"enabled":false},"chart":{"zoomType":"x","type":"datetime"},"legend":{"enabled":true,"align":"center","layout":"horizontal","x":42,"y":0,"itemStyle":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"tooltip":{"crosshairs":true,"pointFormat":"<span style=\"color:{series.color}\">● <\/span><b>{series.name}: {point.y}<\/b> ({point.Relativo}%)<br/>","backgroundColor":"rgba(186,174,174,0.7)","borderColor":"#6d6666","shared":true,"borderWidth":5,"useHTML":true}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Open+Sans","Raleway"],"debug":false},"evals":[],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-6e0a820449991b639437">{"viewer":{"width":"100%","height":350,"padding":0,"fill":true},"browser":{"width":"100%","height":500,"padding":0,"fill":true}}</script>
+<script type="application/json" data-for="htmlwidget-f04b9bd92858a2ce9d3d">{"x":{"hc_opts":{"chart":{"reflow":true,"zoomType":"x","type":"datetime"},"title":{"style":{"fontWeight":"bold","fontSize":"22px","useHTML":true},"text":"Evolución del número de aspirantes en situación de discapacidad - sede Bogotá"},"yAxis":{"title":{"text":"Número de aspirantes (k: miles)","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"type":"linear","lineColor":"#787878","lineWidth":1,"min":0,"opposite":false,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":true},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"line":{"marker":{"enabled":true,"symbol":"square","radius":1}}},"series":[{"name":"No","data":[{"Fecha":"2014-2","Clase":"No","Total":32208,"Relativo":100,"y":32208,"name":"2014-2"},{"Fecha":"2015-1","Clase":"No","Total":52685,"Relativo":100,"y":52685,"name":"2015-1"},{"Fecha":"2015-2","Clase":"No","Total":34117,"Relativo":100,"y":34117,"name":"2015-2"},{"Fecha":"2016-1","Clase":"No","Total":54705,"Relativo":100,"y":54705,"name":"2016-1"},{"Fecha":"2016-2","Clase":"No","Total":31693,"Relativo":100,"y":31693,"name":"2016-2"},{"Fecha":"2017-1","Clase":"No","Total":57781,"Relativo":100,"y":57781,"name":"2017-1"},{"Fecha":"2017-2","Clase":"No","Total":34772,"Relativo":100,"y":34772,"name":"2017-2"},{"Fecha":"2018-1","Clase":"No","Total":53655,"Relativo":100,"y":53655,"name":"2018-1"},{"Fecha":"2018-2","Clase":"No","Total":33690,"Relativo":100,"y":33690,"name":"2018-2"},{"Fecha":"2019-1","Clase":"No","Total":57395,"Relativo":100,"y":57395,"name":"2019-1"},{"Fecha":"2019-2","Clase":"No","Total":31769,"Relativo":100,"y":31769,"name":"2019-2"},{"Fecha":"2020-1","Clase":"No","Total":49621,"Relativo":100,"y":49621,"name":"2020-1"},{"Fecha":"2020-2","Clase":"No","Total":29376,"Relativo":99,"y":29376,"name":"2020-2"},{"Fecha":"2021-1","Clase":"No","Total":48160,"Relativo":99,"y":48160,"name":"2021-1"}],"type":"line","color":"#8cc63f","zoomType":{"enabled":false},"resetZoomButton":true},{"name":"Sí","data":[{"Fecha":"2014-2","Clase":"Sí","Total":49,"Relativo":0,"y":49,"name":"2014-2"},{"Fecha":"2015-1","Clase":"Sí","Total":78,"Relativo":0,"y":78,"name":"2015-1"},{"Fecha":"2015-2","Clase":"Sí","Total":53,"Relativo":0,"y":53,"name":"2015-2"},{"Fecha":"2016-1","Clase":"Sí","Total":79,"Relativo":0,"y":79,"name":"2016-1"},{"Fecha":"2016-2","Clase":"Sí","Total":103,"Relativo":0,"y":103,"name":"2016-2"},{"Fecha":"2017-1","Clase":"Sí","Total":83,"Relativo":0,"y":83,"name":"2017-1"},{"Fecha":"2017-2","Clase":"Sí","Total":81,"Relativo":0,"y":81,"name":"2017-2"},{"Fecha":"2018-1","Clase":"Sí","Total":78,"Relativo":0,"y":78,"name":"2018-1"},{"Fecha":"2018-2","Clase":"Sí","Total":85,"Relativo":0,"y":85,"name":"2018-2"},{"Fecha":"2019-1","Clase":"Sí","Total":94,"Relativo":0,"y":94,"name":"2019-1"},{"Fecha":"2019-2","Clase":"Sí","Total":149,"Relativo":0,"y":149,"name":"2019-2"},{"Fecha":"2020-1","Clase":"Sí","Total":211,"Relativo":0,"y":211,"name":"2020-1"},{"Fecha":"2020-2","Clase":"Sí","Total":213,"Relativo":1,"y":213,"name":"2020-2"},{"Fecha":"2021-1","Clase":"Sí","Total":297,"Relativo":1,"y":297,"name":"2021-1"}],"type":"line","color":"#f15a24","zoomType":{"enabled":false},"resetZoomButton":true}],"xAxis":{"type":"category","title":{"text":"Periodo","offset":70,"style":{"fontWeight":"bold","fontSize":"18px","color":"black"}},"lineColor":"#787878","opposite":false,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"rangeSelector":{"inputEnabled":false,"enabled":false},"legend":{"enabled":true,"align":"center","layout":"horizontal","x":42,"y":0,"itemStyle":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"tooltip":{"crosshairs":true,"pointFormat":"<span style=\"color:{series.color}\">● <\/span><b>{series.name}: {point.y}<\/b> ({point.Relativo}%)<br/>","backgroundColor":"rgba(186,174,174,0.7)","borderColor":"#6d6666","shared":true,"borderWidth":5,"useHTML":true}},"theme":{"colors":["#f1c40f","#2ecc71","#9b59b6","#e74c3c","#34495e","#3498db","#1abc9c","#f39c12","#d35400"],"chart":{"backgroundColor":"#ECF0F1"},"xAxis":{"gridLineDashStyle":"Dash","gridLineWidth":1,"gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"yAxis":{"gridLineDashStyle":"Dash","gridLineColor":"#BDC3C7","lineColor":"#BDC3C7","minorGridLineColor":"#BDC3C7","tickColor":"#BDC3C7","tickWidth":1},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#34495e","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Open+Sans","Raleway"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-f04b9bd92858a2ce9d3d">{"viewer":{"width":"100%","height":350,"padding":0,"fill":true},"browser":{"width":"100%","height":500,"padding":0,"fill":true}}</script>
 </body>
 </html>

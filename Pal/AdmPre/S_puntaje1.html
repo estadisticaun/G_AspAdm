@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <style>body{background-color:white;}</style>
-<script src="libraryjs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libraryjs/jquery-1.11.1/jquery.min.js"></script>
+<script src="libraryjs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libraryjs/jquery-3.5.0/jquery.min.js"></script>
 <script src="libraryjs/proj4js-2.3.15/proj4.js"></script>
-<link href="libraryjs/highcharts-6.0.3/css/motion.css" rel="stylesheet" />
-<script src="libraryjs/highcharts-6.0.3/highcharts.js"></script>
-<script src="libraryjs/highcharts-6.0.3/highcharts-3d.js"></script>
-<script src="libraryjs/highcharts-6.0.3/highcharts-more.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/stock.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/heatmap.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/treemap.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/annotations.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/boost.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/data.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/drag-panes.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/drilldown.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/funnel.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/item-series.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/offline-exporting.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/overlapping-datalabels.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/parallel-coordinates.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/sankey.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/solid-gauge.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/streamgraph.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/sunburst.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/vector.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/wordcloud.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/xrange.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/exporting.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/export-data.js"></script>
-<script src="libraryjs/highcharts-6.0.3/maps/modules/map.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/grouped-categories.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/motion.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/multicolor_series.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/reset.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/symbols-extra.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/text-symbols.js"></script>
-<script src="libraryjs/highchart-binding-0.6.0/highchart.js"></script>
+<link href="libraryjs/highcharts-8.1.2/css/motion.css" rel="stylesheet" />
+<script src="libraryjs/highcharts-8.1.2/highcharts.js"></script>
+<script src="libraryjs/highcharts-8.1.2/highcharts-3d.js"></script>
+<script src="libraryjs/highcharts-8.1.2/highcharts-more.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/stock.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/map.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/annotations.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/data.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/drilldown.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/item-series.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/offline-exporting.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/overlapping-datalabels.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/exporting.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/export-data.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/funnel.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/heatmap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/treemap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/sankey.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/dependency-wheel.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/organization.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/solid-gauge.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/streamgraph.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/sunburst.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/vector.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/wordcloud.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/xrange.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/tilemap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/venn.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/gantt.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/timeline.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/parallel-coordinates.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/bullet.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/coloraxis.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/dumbbell.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/lollipop.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/series-label.js"></script>
+<script src="libraryjs/highcharts-8.1.2/plugins/motion.js"></script>
+<script src="libraryjs/highcharts-8.1.2/custom/reset.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/boost.js"></script>
+<script src="libraryjs/highchart-binding-0.8.2/highchart.js"></script>
   <title>highchart</title>
 </head>
 <body>
 <div id="htmlwidget_container">
-  <div id="htmlwidget-1ecf08926168a8f852e6" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <div id="htmlwidget-a0ae88a74e57e7dd8257" style="width:100%;height:500px;" class="highchart html-widget"></div>
 </div>
-<script type="application/json" data-for="htmlwidget-1ecf08926168a8f852e6">{"x":{"hc_opts":{"title":{"style":{"fontWeight":"bold","fontSize":"25px"},"text":"Evolución distribución puntajes en examen de admisión de admitidos a pregrado por tipos de inscripción - sede Palmira<br/> -no incluye datos atípicos-"},"yAxis":{"title":{"text":"Puntaje total del examen","style":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"lineColor":"#787878","lineWidth":1,"min":0,"max":1000,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"marker":{"symbol":"circle"}},"treemap":{"layoutAlgorithm":"squarified"}},"chart":{"type":"column"},"xAxis":{"type":"category","lineColor":"#787878","lineWidth":1,"title":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"},"text":"Periodo"},"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"series":[{"name":"PAES","data":[{"name":"2018-2","low":439.8263,"q1":462.23105,"median":481.9808,"q3":512.6436,"high":565.0358},{"name":"2019-1","low":469.8635,"q1":496.4682,"median":515.1383,"q3":540.9999,"high":592.225},{"name":"2019-2","low":434.5929,"q1":465.4359,"median":479.9663,"q3":500.1908,"high":545.5064},{"name":"2020-1","low":430.7698,"q1":470.2829,"median":489.19695,"q3":515.4061,"high":568.5074},{"name":"2020-2","low":309.2308,"q1":430,"median":475.3846,"q3":516.923,"high":587.6924}],"type":"boxplot","id":"PAES","color":"#f15a24"},{"name":"Regular","data":[{"name":"2018-2","low":439.4915,"q1":471.3589,"median":502.1679,"q3":542.7278,"high":643.9884},{"name":"2019-1","low":464.2895,"q1":504.1118,"median":526.2484,"q3":561.8594,"high":647.8478},{"name":"2019-2","low":430.0516,"q1":465.94175,"median":490.6812,"q3":520.2297,"high":599.1131},{"name":"2020-1","low":433.0062,"q1":476.225,"median":504.3328,"q3":552.7438,"high":657.5593},{"name":"2020-2","low":398.6206,"q1":479.6154,"median":520.7692,"q3":545.3846,"high":622.3076}],"type":"boxplot","id":"Regular","color":"#8cc63f"}],"legend":{"enabled":true,"align":"center","layout":"horizontal","x":42,"y":0,"itemStyle":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"theme":{"colors":["#41B5E9","#FA8832","#34393C","#E46151"],"chart":{"style":{"color":"#333","fontFamily":"Open Sans"}},"title":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"subtitle":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Open+Sans","Raleway"],"debug":false},"evals":[],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-1ecf08926168a8f852e6">{"viewer":{"width":"100%","height":350,"padding":0,"fill":true},"browser":{"width":"100%","height":500,"padding":0,"fill":true}}</script>
+<script type="application/json" data-for="htmlwidget-a0ae88a74e57e7dd8257">{"x":{"hc_opts":{"chart":{"reflow":true,"type":"column"},"title":{"style":{"fontWeight":"bold","fontSize":"25px"},"text":"Evolución distribución puntajes en examen de admisión de admitidos a pregrado por tipos de inscripción - sede Palmira<br/> -no incluye datos atípicos-"},"yAxis":{"title":{"text":"Puntaje total del examen","style":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"lineColor":"#787878","lineWidth":1,"min":0,"max":1000,"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"marker":{"symbol":"circle"}},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"type":"category","lineColor":"#787878","lineWidth":1,"title":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"},"text":"Periodo"},"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"series":[{"name":"PAES","data":[{"name":"2019-1","low":469.8635,"q1":496.4682,"median":515.1383,"q3":540.9999,"high":592.225},{"name":"2019-2","low":434.5929,"q1":465.4359,"median":479.9663,"q3":500.1908,"high":545.5064},{"name":"2020-1","low":430.7698,"q1":470.2829,"median":489.19695,"q3":515.4061,"high":568.5074},{"name":"2020-2","low":309.2308,"q1":430,"median":475.3846,"q3":516.923,"high":587.6924},{"name":"2021-1","low":246.1859,"q1":416.2987,"median":491.3977,"q3":532.7315,"high":641.6326}],"type":"boxplot","id":"PAES","color":"#f15a24"},{"name":"Regular","data":[{"name":"2019-1","low":464.2895,"q1":504.1118,"median":526.2484,"q3":561.8594,"high":647.8478},{"name":"2019-2","low":430.0516,"q1":465.94175,"median":490.6812,"q3":520.2297,"high":599.1131},{"name":"2020-1","low":433.0062,"q1":476.225,"median":504.3328,"q3":552.7438,"high":657.5593},{"name":"2020-2","low":398.6206,"q1":479.6154,"median":520.7692,"q3":545.3846,"high":622.3076},{"name":"2021-1","low":363.349,"q1":473.5621,"median":513.08625,"q3":560.8213,"high":688.8505}],"type":"boxplot","id":"Regular","color":"#8cc63f"}],"legend":{"enabled":true,"align":"center","layout":"horizontal","x":42,"y":0,"itemStyle":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"theme":{"colors":["#41B5E9","#FA8832","#34393C","#E46151"],"chart":{"style":{"color":"#333","fontFamily":"Open Sans"}},"title":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"subtitle":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Open+Sans","Raleway"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-a0ae88a74e57e7dd8257">{"viewer":{"width":"100%","height":350,"padding":0,"fill":true},"browser":{"width":"100%","height":500,"padding":0,"fill":true}}</script>
 </body>
 </html>

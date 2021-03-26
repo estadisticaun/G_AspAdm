@@ -1,52 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <style>body{background-color:white;}</style>
-<script src="libraryjs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<script src="libraryjs/jquery-1.11.1/jquery.min.js"></script>
+<script src="libraryjs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<script src="libraryjs/jquery-3.5.0/jquery.min.js"></script>
 <script src="libraryjs/proj4js-2.3.15/proj4.js"></script>
-<link href="libraryjs/highcharts-6.0.3/css/motion.css" rel="stylesheet" />
-<script src="libraryjs/highcharts-6.0.3/highcharts.js"></script>
-<script src="libraryjs/highcharts-6.0.3/highcharts-3d.js"></script>
-<script src="libraryjs/highcharts-6.0.3/highcharts-more.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/stock.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/heatmap.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/treemap.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/annotations.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/boost.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/data.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/drag-panes.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/drilldown.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/funnel.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/item-series.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/offline-exporting.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/overlapping-datalabels.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/parallel-coordinates.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/sankey.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/solid-gauge.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/streamgraph.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/sunburst.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/vector.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/wordcloud.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/xrange.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/exporting.js"></script>
-<script src="libraryjs/highcharts-6.0.3/modules/export-data.js"></script>
-<script src="libraryjs/highcharts-6.0.3/maps/modules/map.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/grouped-categories.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/motion.js"></script>
-<script src="libraryjs/highcharts-6.0.3/plugins/multicolor_series.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/reset.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/symbols-extra.js"></script>
-<script src="libraryjs/highcharts-6.0.3/custom/text-symbols.js"></script>
-<script src="libraryjs/highchart-binding-0.6.0/highchart.js"></script>
+<link href="libraryjs/highcharts-8.1.2/css/motion.css" rel="stylesheet" />
+<script src="libraryjs/highcharts-8.1.2/highcharts.js"></script>
+<script src="libraryjs/highcharts-8.1.2/highcharts-3d.js"></script>
+<script src="libraryjs/highcharts-8.1.2/highcharts-more.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/stock.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/map.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/annotations.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/data.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/drilldown.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/item-series.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/offline-exporting.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/overlapping-datalabels.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/exporting.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/export-data.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/funnel.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/heatmap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/treemap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/sankey.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/dependency-wheel.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/organization.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/solid-gauge.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/streamgraph.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/sunburst.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/vector.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/wordcloud.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/xrange.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/tilemap.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/venn.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/gantt.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/timeline.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/parallel-coordinates.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/bullet.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/coloraxis.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/dumbbell.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/lollipop.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/series-label.js"></script>
+<script src="libraryjs/highcharts-8.1.2/plugins/motion.js"></script>
+<script src="libraryjs/highcharts-8.1.2/custom/reset.js"></script>
+<script src="libraryjs/highcharts-8.1.2/modules/boost.js"></script>
+<script src="libraryjs/highchart-binding-0.8.2/highchart.js"></script>
   <title>highchart</title>
 </head>
 <body>
 <div id="htmlwidget_container">
-  <div id="htmlwidget-ab254c7eefe5d316ff29" style="width:100%;height:500px;" class="highchart html-widget"></div>
+  <div id="htmlwidget-d695fcc9bf8cef029603" style="width:100%;height:500px;" class="highchart html-widget"></div>
 </div>
-<script type="application/json" data-for="htmlwidget-ab254c7eefe5d316ff29">{"x":{"hc_opts":{"title":{"style":{"fontWeight":"bold","fontSize":"25px"},"text":"Distribución de aspirantes a pregrado por sede de inscripción, periodo 2020-2"},"yAxis":{"title":{"text":"Número de aspirantes (k: miles)","style":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bar":{"dataLabels":{"enabled":true,"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"colorByPoint":true,"colors":["#8cc63f","#f15a24","#2ca25f","#0071bc","#6d6666","#fbb03b","#93278f","#9e9ac8","#29abe2","#c1272d"]}},"series":[{"group":"group","data":[{"YEAR":2020,"SEMESTRE":2,"Clase":"Bogotá","Total":27569,"y":27569,"name":"Bogotá - 68.1 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Medellín","Total":4505,"y":4505,"name":"Medellín - 11.1 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Universidad","Total":1710,"y":1710,"name":"Universidad - 4.2 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Manizales","Total":1572,"y":1572,"name":"Manizales - 3.9 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Tumaco","Total":1474,"y":1474,"name":"Tumaco - 3.6 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Orinoquía","Total":1222,"y":1222,"name":"Orinoquía - 3 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Palmira","Total":849,"y":849,"name":"Palmira - 2.1 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"De La Paz","Total":797,"y":797,"name":"De La Paz - 2 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Amazonía","Total":667,"y":667,"name":"Amazonía - 1.6 %"},{"YEAR":2020,"SEMESTRE":2,"Clase":"Caribe","Total":100,"y":100,"name":"Caribe - 0.2 %"}],"type":"bar","name":"Número de aspirantes (k: miles)","showInLegend":false}],"xAxis":{"categories":["Bogotá","Medellín","Universidad","Manizales","Tumaco","Orinoquía","Palmira","De La Paz","Amazonía","Caribe"],"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}}},"theme":{"colors":["#41B5E9","#FA8832","#34393C","#E46151"],"chart":{"style":{"color":"#333","fontFamily":"Open Sans"}},"title":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"subtitle":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Open+Sans","Raleway"],"debug":false},"evals":[],"jsHooks":[]}</script>
-<script type="application/htmlwidget-sizing" data-for="htmlwidget-ab254c7eefe5d316ff29">{"viewer":{"width":"100%","height":350,"padding":0,"fill":true},"browser":{"width":"100%","height":500,"padding":0,"fill":true}}</script>
+<script type="application/json" data-for="htmlwidget-d695fcc9bf8cef029603">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"style":{"fontWeight":"bold","fontSize":"25px"},"text":"Distribución de aspirantes a pregrado por sede de inscripción, periodo 2021-1"},"yAxis":{"title":{"text":"Número de aspirantes (k: miles)","style":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}},"credits":{"enabled":false},"exporting":{"enabled":true},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bar":{"dataLabels":{"enabled":true,"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}},"colorByPoint":true,"colors":["#8cc63f","#f15a24","#2ca25f","#0071bc","#fbb03b","#6d6666","#9e9ac8","#93278f","#29abe2","#c1272d"]}},"series":[{"group":"group","data":[{"YEAR":2021,"SEMESTRE":1,"Clase":"Bogotá","Total":43114,"y":43114,"name":"Bogotá - 73.4 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Medellín","Total":6785,"y":6785,"name":"Medellín - 11.6 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Universidad","Total":2268,"y":2268,"name":"Universidad - 3.9 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Manizales","Total":1690,"y":1690,"name":"Manizales - 2.9 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Orinoquía","Total":1558,"y":1558,"name":"Orinoquía - 2.7 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Tumaco","Total":1206,"y":1206,"name":"Tumaco - 2.1 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"De La Paz","Total":712,"y":712,"name":"De La Paz - 1.2 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Palmira","Total":613,"y":613,"name":"Palmira - 1 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Amazonía","Total":573,"y":573,"name":"Amazonía - 1 %"},{"YEAR":2021,"SEMESTRE":1,"Clase":"Caribe","Total":210,"y":210,"name":"Caribe - 0.4 %"}],"type":"bar","name":"Número de aspirantes (k: miles)","showInLegend":false}],"xAxis":{"categories":["Bogotá","Medellín","Universidad","Manizales","Orinoquía","Tumaco","De La Paz","Palmira","Amazonía","Caribe"],"labels":{"style":{"fontWeight":"bold","color":"black","fontSize":"18px"}}}},"theme":{"colors":["#41B5E9","#FA8832","#34393C","#E46151"],"chart":{"style":{"color":"#333","fontFamily":"Open Sans"}},"title":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"subtitle":{"style":{"fontFamily":"Raleway","fontWeight":"100"}},"legend":{"align":"right","verticalAlign":"bottom"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1},"yAxis":{"gridLineColor":"#F3F3F3","lineColor":"#F3F3F3","minorGridLineColor":"#F3F3F3","tickColor":"#F3F3F3","tickWidth":1}},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":["Open+Sans","Raleway"],"debug":false},"evals":[],"jsHooks":[]}</script>
+<script type="application/htmlwidget-sizing" data-for="htmlwidget-d695fcc9bf8cef029603">{"viewer":{"width":"100%","height":350,"padding":0,"fill":true},"browser":{"width":"100%","height":500,"padding":0,"fill":true}}</script>
 </body>
 </html>
